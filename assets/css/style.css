@@ -14,12 +14,18 @@ body {
     background-image: url(../img/background-digimon.jpg);
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Press Start 2P', cursive;
 }
+
+.titulo {
+    text-align: center;
+}
+
 
 /* Nav-Bar */
 
 .navbar {
-    background-color:rgba(100, 148, 237, 0.6)
+    background-color:rgba(30, 143, 255, 0.6);
 }
 
 .form-control {
@@ -28,4 +34,36 @@ body {
 
 .form-control::placeholder {
     font-size: 1.5rem;
+}
+
+.dropdown-item {
+    font-size: 1.5rem;
+}
+
+/* TABLE */
+
+h1 {
+    font-size: 9rem;
+    font-weight: bold;
+    background-color: rgba(30, 143, 255, 0.705);
+    color:rgb(239, 227, 113) ;
+    margin: 15rem auto 0 auto;
+    border-radius: 2rem;
+    border: 0.4rem solid black;
+    font-style: italic;
+    -webkit-text-stroke-width: 1.5px; /* Ancho del borde */
+    -webkit-text-stroke-color: #000; 
+    display: inline-block;
+    padding: 0.5rem 2rem 0 2rem;
+
+}
+
+.table {
+    background-color: rgba(30, 143, 255, 0.4);
+    width: 90%;
+    margin: 10rem auto;
+}
+
+.title-table {
+    background-color: rgba(30, 143, 255, 0.9);
 }
