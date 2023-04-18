@@ -1,5 +1,5 @@
 const URL_BASE = 'https://digimon-api.vercel.app/';
-const URL_DIGIMONS = URL_BASE+'/api/digimon/name/'
+const URL_DIGIMONS = URL_BASE+'api/digimon/name/'
 let contenido;
 
 function tabla(datos) {
@@ -14,7 +14,16 @@ function tabla(datos) {
     }
 }
 
-digibuscar() {
+function digibuscar() { 
+    let digiName = document.getElementById("buscar").value;
+    digiName = digiName.toLowerCase();
+
+    fetch(URL_DIGIMONS + digiName)
+    .then(response => response.json())
+    .then(datos => {
+        tabla(datos);
+        console.log(datos)
+    });
 
 }
 
@@ -24,7 +33,6 @@ $(document).ready(function (){
     fetch(URL_BASE+'api/digimon')
     .then(response => response.json())
     .then(datos => {
-        console.log(datos)
         tabla(datos);
     });
 })
