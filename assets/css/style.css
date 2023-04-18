@@ -37,6 +37,11 @@ body {
     font-size: 1.5rem;
 }
 
+.nav-item {
+    margin-right: 4rem;
+    margin-left: 1rem;
+}
+
 .dropdown-item {
     font-size: 1.5rem;
 }
@@ -62,7 +67,7 @@ h1 {
 
 .table {
     background-color: rgba(30, 143, 255, 0.4);
-    width: 90%;
+    max-width: 90%;
     margin: 10rem auto;
 }
 

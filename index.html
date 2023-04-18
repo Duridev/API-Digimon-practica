@@ -16,6 +16,8 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- Link Javascript -->
     <script src="./assets/js/script.js"></script>
 </head>
@@ -34,27 +36,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="https://digimon-api.vercel.app/" target="_blank">API-Digimon</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Ver por Niveles
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Fresh</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">In Training</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Rookie</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Champion</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Ultimate</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Mega</a></li>
                             </ul>
                         </li>
                     </ul>
                     <img src="./assets/img/izzy.gif" width="55rem" alt="" class="me-3">
                     <form class="d-flex col-md-4" role="search">
                         <input class="form-control me-3" type="search" placeholder="Ej: Koromon">
-                        <button class="btn btn-lg btn-outline-primary btn-warning"
-                            type="submit"><strong>DigiBuscar</strong></button>
+                        <button id="buscar" class="btn btn-lg btn-outline-primary btn-warning"
+                            type="button" onclick="digibuscar()"><strong>DigiBuscar</strong></button>
                     </form>
 
                 </div>
@@ -79,9 +82,9 @@
             </thead>
             <tbody id="contenido">
                 <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>Nombre</td>
+                    <td>Fotito</td>
+                    <td>Nivel</td>
                 </tr>
             </tbody>
         </table>
