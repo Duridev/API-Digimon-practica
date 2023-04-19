@@ -45,12 +45,12 @@
                                 Ver por Niveles
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" target="_blank">Fresh</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">In Training</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Rookie</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Champion</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Ultimate</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Mega</a></li>
+                                <li><a id="fresh" onclick="eggFilter()" class="dropdown-item" href="#" >Fresh</a></li>
+                                <li><a id="training" onclick="babyFilter()" class="dropdown-item" href="#" >In Training</a></li>
+                                <li><a id="rookie" onclick="boyFilter()" class="dropdown-item" href="#" >Rookie</a></li>
+                                <li><a id="champion" onclick="adultFilter()" class="dropdown-item" href="#" >Champion</a></li>
+                                <li><a id="ultimate" onclick="ultraFilter()" class="dropdown-item" href="#" >Ultimate</a></li>
+                                <li><a id="mega" onclick="megaFilter()" class="dropdown-item" href="#" >Mega</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,6 +73,7 @@
         </div>
 
         <div id="carta"></div>
+        <div id="nivel" class="por-nivel"></div>
 
         <table class="table table-striped" id="tabla">
             <thead>
