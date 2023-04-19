@@ -17,7 +17,8 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- Link Javascript -->
     <script src="./assets/js/script.js"></script>
 </head>
@@ -56,8 +57,8 @@
                     <img src="./assets/img/izzy.gif" width="55rem" alt="" class="me-3">
                     <form class="d-flex col-md-4" role="search">
                         <input id="buscar" class="form-control me-3" type="search" placeholder="Ej: Koromon">
-                        <button class="btn btn-lg btn-outline-primary btn-warning"
-                            type="button" onclick="digibuscar()"><strong>DigiBuscar</strong></button>
+                        <button class="btn btn-lg btn-outline-primary btn-warning" type="button"
+                            onclick="digibuscar()"><strong>DigiBuscar</strong></button>
                     </form>
 
                 </div>
@@ -71,8 +72,9 @@
             <h1>DIGIMON-ROSTER</h1>
         </div>
 
+        <div id="carta"></div>
 
-        <table class="table table-striped">
+        <table class="table table-striped" id="tabla">
             <thead>
                 <tr class="title-table">
                     <th scope="col">NAME</th>
@@ -82,9 +84,9 @@
             </thead>
             <tbody id="contenido">
                 <tr>
-                    <td>Nombre</td>
-                    <td>Fotito</td>
-                    <td>Nivel</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>

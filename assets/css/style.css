@@ -50,10 +50,9 @@ body {
 
 h1 {
     font-size: 9rem;
-    font-weight: bold;
     background-color: rgba(30, 143, 255, 0.705);
     color:rgb(239, 227, 113) ;
-    margin: 15rem auto 0 auto;
+    margin: 12rem auto 0 auto;
     border-radius: 2rem;
     border: 0.4rem solid black;
     font-style: italic;
@@ -73,4 +72,35 @@ h1 {
 
 .title-table {
     background-color: rgba(30, 143, 255, 0.9);
+}
+
+
+/* DIGICARDS */
+
+.card {
+    margin: 6rem auto auto auto;
+}
+
+.estado {
+    background-image: url(../img/fondo-matrix.gif);
+    background-position: center;
+    background-size: contain;
+}
+
+.card-body {
+    margin-top: 8rem;
+}
+
+h3, h5 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00ff41;
+    -webkit-text-stroke-width: 2.5px; /* Ancho del borde */
+    -webkit-text-stroke-color: #000;
+    font-size: 3.5rem;
+}
+
+h5 {
+    -webkit-text-stroke-width: 2px; /* Ancho del borde */
+    font-size: 3rem;
 }
