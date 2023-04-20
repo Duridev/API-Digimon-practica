@@ -10,7 +10,7 @@ function tabla(datos) {
     for (let temp of datos) {
         contenido.innerHTML +=`
                 <tr>
-                <td>${temp.name}</td>
+                <td class="nombre-digimon">${temp.name}</td>
                 <td><img class="imagen-miniatura" width="80rem" src="${temp.img}"></td>
                 <td>${temp.level}</td>
             </tr>`;

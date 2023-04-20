@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-image: url(../img/digimon-portada-2.png);
     background-size: cover;
     background-position: bottom;
@@ -38,18 +38,27 @@ body {
 }
 
 .nav-item {
-    margin-right: 4rem;
+    margin-right: 3rem;
     margin-left: 1rem;
+    overflow-wrap: break-word;
 }
 
 .dropdown-item {
     font-size: 1.5rem;
 }
 
+.dropdown {
+    margin-right: 0;
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+
 /* TABLE */
 
 h1 {
-    font-size: 9rem;
+    max-width: 80%;
+    font-size: 7rem;
     background-color: rgba(30, 143, 255, 0.705);
     color:rgb(239, 227, 113) ;
     margin: 12rem auto 0 auto;
@@ -66,12 +75,20 @@ h1 {
 
 .table {
     background-color: rgba(30, 143, 255, 0.4);
-    max-width: 90%;
+    width: 70%;
+    max-width: 94%;
+    min-width: 60%;
     margin: 10rem auto;
 }
 
 .title-table {
     background-color: rgba(30, 143, 255, 0.9);
+}
+
+.nombre-digimon {
+    max-width: 20rem;
+    min-width: 10rem;
+    overflow-wrap: break-word;
 }
 
 .imagen-miniatura {
@@ -138,4 +155,44 @@ h5 {
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
     margin-bottom: 0;
+}
+
+@media (max-width: 765px) and (min-width: 421px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .imagen-miniatura {
+        width: 5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    .table {
+        margin: 5rem auto;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .imagen-miniatura {
+        width: 4rem;
+        padding-right: 2px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .table {
+        margin: 2.5rem auto;
+    }
+
 }
