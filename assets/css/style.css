@@ -99,16 +99,20 @@ h1 {
 
 .card {
     margin: 6rem auto auto auto;
+    border-radius: 1rem;
 }
 
 .estado {
     background-image: url(../img/fondo-matrix.gif);
     background-position: center;
     background-size: contain;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .card-body {
     margin-top: 8rem;
+    max-width: 70%;
 }
 
 h3, h5 {
@@ -173,6 +177,10 @@ h5 {
 
     .table {
         margin: 5rem auto;
+    }
+
+    .card {
+        width: 50rem;
     }
 }
 
